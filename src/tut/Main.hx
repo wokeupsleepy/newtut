@@ -22,6 +22,7 @@ class Main
 		// entry point
 		
 		var freshChar = new Character();
+		trace(freshChar.selectRandomTraits());
 		trace(Std.string(freshChar.returnRandomTrait())); //this should print out the randomly selected trait as a string, but it's returning null, so why?
 		
 	}

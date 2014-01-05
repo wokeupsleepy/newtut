@@ -20,16 +20,16 @@ class Character
 		
 	}
 	
-	public function selectRandomTraits()
+	public function selectRandomTraits() : Void
 	{
 		var traitPool = Type.allEnums(Trait); //made Trait enum into an array
-		var randomInt = Math.floor(Math.random()*(traitPool.length)); //return a random integer that is at most traitPool,length - 1
+		var randomInt = Math.floor(Math.random()*(traitPool.length)); //return a random integer that is at most traitPool.length - 1
 		
 		randomTrait = traitPool[randomInt]; //this should assign a Trait to randomTrait
 		
 	}
 	
-	public function returnRandomTrait()
+	public function returnRandomTrait() : Trait
 	{
 		return randomTrait;
 	}
